@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // --- Configuración de la Base de Datos ---
 $servername = "localhost";
 $username = "root";
-$password = "312312"; // Revisa si esta sigue siendo tu contraseña
+$password = ""; // Revisa si esta sigue siendo tu contraseña
 $dbname = "strokbig_db";
 
 $response = ['success' => false, 'message' => 'Error desconocido.'];

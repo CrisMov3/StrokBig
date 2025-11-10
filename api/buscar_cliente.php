@@ -6,7 +6,7 @@ header('Access-Control-Allow-Origin: *');
 // --- Configuración de la Base de Datos ---
 $servername = "localhost";
 $username = "root";
-$password = "312312"; // <-- PON TU CONTRASEÑA DE MYSQL AQUÍ
+$password = ""; // <-- PON TU CONTRASEÑA DE MYSQL AQUÍ
 $dbname = "strokbig_db";
 
 // Respuesta por defecto

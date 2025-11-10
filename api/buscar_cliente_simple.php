@@ -9,7 +9,7 @@ header('Access-Control-Allow-Origin: *'); // Or your specific admin panel origin
 // --- DB Configuration ---
 $servername = "localhost";
 $username = "root";
-$password = "312312"; // <-- YOUR MYSQL PASSWORD HERE
+$password = ""; // <-- YOUR MYSQL PASSWORD HERE
 $dbname = "strokbig_db";
 
 $response = ['success' => false, 'message' => 'Cliente no encontrado.'];
