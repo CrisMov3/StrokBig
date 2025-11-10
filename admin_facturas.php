@@ -2,7 +2,7 @@
 // --- Configuración de la Base de Datos ---
 $servername = "localhost";
 $username = "root";
-$password = "312312";        // <-- TU CONTRASEÑA MYSQL AQUÍ
+$password = "";        // <-- TU CONTRASEÑA MYSQL AQUÍ
 $dbname = "strokbig_db";
 
 // Variable para mensajes
