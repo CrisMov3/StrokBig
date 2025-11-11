@@ -232,54 +232,70 @@ main {
   margin: 0 auto;
 }
 
-.terms-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  padding: 60px 20px; /* Padding horizontal para que no toque los bordes */
-  max-width: 1200px;
+/* --- ESTILOS DE ACORDEÓN --- */
+.policy-container {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 60px 20px;
 }
 
-.term-card {
+.accordion details {
   background: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
 }
 
-.term-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+.accordion details:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-.card-icon {
-  font-size: 2.5rem;
-  color: #042a63;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #eef3fb;
-  border-radius: 50%;
-}
-
-.card-content h2 {
-  font-size: 1.4em;
+.accordion summary {
+  padding: 20px 25px;
+  font-size: 1.2em;
   font-weight: 600;
   color: #042a63;
-  margin-bottom: 10px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.card-content p {
-  line-height: 1.7;
-  color: #555;
+.accordion summary::-webkit-details-marker {
+  display: none;
 }
+
+.accordion summary i {
+  font-size: 1.4em;
+  color: #28306e; /* Un azul más oscuro para el icono */
+  width: 24px; /* Ancho fijo para alinear el texto */
+  text-align: center;
+}
+
+.accordion summary::after {
+  content: '\f0142'; /* Icono de flecha hacia abajo */
+  font-family: "Material Design Icons";
+  margin-left: auto;
+  font-size: 1.4em;
+  transition: transform 0.3s ease;
+}
+
+.accordion details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.details-content {
+  /* Padding izquierdo = padding summary (25) + gap (15) + ancho icono (24) */
+  padding: 0 25px 25px 64px; 
+  line-height: 1.8;
+  color: #333;
+}
+/* --- FIN DE ESTILOS DE ACORDEÓN --- */
+
 
 /* ============================================= */
 /* ===== FOOTER REDISEÑADO                 ===== */
@@ -562,7 +578,7 @@ main {
         transform: rotate(45deg) translate(7px, 7px);
     }
 
-    .hamburger-btn.active span:nth-child(2) {
+    .hamburger-btn.active span:nth-C-child(2) {
         opacity: 0;
     }
 
@@ -724,8 +740,16 @@ main {
     font-size: 2.2em;
   }
 
-  .terms-grid {
+  .policy-container {
     padding: 40px 20px;
-    gap: 20px;
+  }
+
+  .accordion summary {
+    font-size: 1.1em;
+    padding: 15px 20px;
+  }
+
+  .details-content {
+    padding: 0 20px 20px 55px; /* Ajuste para móvil */
   }
 }
