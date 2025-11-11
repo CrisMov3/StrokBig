@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-<cabeza>
-  <meta conjunto de caracteres=„UTF-8">
-  <link rel="hoja de estilo" href=„Estilos/Menú.css">
-  <meta nombre="ventana gráfica" contenido="ancho=ancho del dispositivo, escala inicial=1.0">
-  <tipulo>Strokbig</tipulo>
-   <link rel="icono de acceso directo" href="activos/nuevos/STROKBIG-ISOTIPO-VANILLA.png" tipo="imagen/icono x">
-  <link rel="hoja de estilo" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
-  <link rel="preconectar" href="https://fonts.googleapis.com">
-  <link rel="preconectar" href="https://fonts.gstatic.com" origen cruzado>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&mostrar=intercambiar" rel="hoja de estilo">
-</cabeza>
-<!-- Etiqueta de Google (gtag.js) -->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Styles/Menu.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strokbig</title>
+   <link rel="shortcut icon" href="assets/new/STROKBIG-ISOTIPO-VANILLA.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-878416175"></script>
 <script>
-  ventana.capa de datos = ventana.capa de datos || [];
-  función gtag(){capa de datos.push(argumentos);}
-  gtag('js', nuevo Fecha());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
   gtag('config', 'AW-878416175');
 </script>
-<cuervo>
+<body>
 
-  <encabezado id="encabezado">
-    <nav clasa="barra de navegación" id="barra de navegación">
-  <div clasa="logotipo" aria-oculta="falso">
-    <a href=„index.html">
-      <img src="activos/nuevos/STB-ISOTIPO-[NM]-Vanilla-[NO-MR].png" alt=„Siglas STB" clase="logotipo-siglas">
-      <img src="activos/nuevos/Strokbig-Logo-Vanilla-[NO-MR].png" alt="Strokbig nombre completo" clasa="logotipo--completo">
+  <header id="header">
+    <nav class="navbar" id="navbar">
+  <div class="logo" aria-hidden="false">
+    <a href="index.html">
+      <img src="assets/new/STB-ISOTIPO-[NM]-Vanilla-[NO-MR].png" alt="STB siglas" class="logo--siglas">
+      <img src="assets/new/Strokbig-Logo-Vanilla-[NO-MR].png" alt="Strokbig nombre completo" class="logo--full">
     </a>
   </div>
 
-  <ul clasa="enlaces de navegación" id="menú de navegación">
-    <li><a href=„index.html">INICIO</a></li>
-    <li><a href=„ETH.html">SERVICIOS</a></li>
+  <ul class="nav-links" id="nav-menu">
+    <li><a href="index.html">INICIO</a></li>
+    <li><a href="ETH.html">SERVICIOS</a></li>
     <li><a href="nosotros.html">NOSOTROS</a></li>
     <li><a href="#">CLIENTES</a></li>
     <li><a href="contacto.html">CONTACTO</a></li>
-    <li clasa="nav-links__cta-mobile">
-        <a href="pagos.html" clasa="cta cta-mobile--resaltado">PAGOS EN LÍNEA</a>
+    <li class="nav-links__cta-mobile">
+        <a href="pagos.html" class="cta cta-mobile--highlight">PAGOS EN LÍNEA</a>
     </li>
-    <li clasa="nav-links__cta-mobile">
-        <a href="#" clasa="cta">Inicio sesión en Zeitplan</a>
+    <li class="nav-links__cta-mobile">
+        <a href="#" class="cta">Iniciar sesión en Zeitplan</a>
     </li>
   </ul>
 
-  <div clasa="barra de navegación-acciones-escritorio">
-      <a href="pagos.html" clase="cta-nav cta-nav--resaltado">Pagos en Línea</a>
-      <a href="#" clase="cta-nav">Inicio sesión en Zeitplan</a>
+  <div class="navbar-actions-desktop">
+      <a href="pagos.html" class="cta-nav cta-nav--highlight">Pagos en Línea</a>
+      <a href="#" class="cta-nav">Iniciar sesión en Zeitplan</a>
   </div>
 
-  <botón clase="hamburguesa-btn" id="hamburguesa-btn" aria-label=„Abrir menú" aria-expandida="falso">
+  <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
     <span></span><span></span><span></span>
-  </botón>
+  </button>
 </nav>
-  </encabezado>
+  </header>
 
-  <div clasa="superposición" id="superposición"></div>
+  <div class="overlay" id="overlay"></div>
 
-  <principal>
-    <sección clase="sección de héroes">
-      <div clase="contenedor de héroes">
-        <h1 clase="título de héroe">Impulsamos la Transformación Digital</h1>
-        <p clase="introducción al héroe">
- En STROKBIG somos una empresa dedicada a desarrollar soluciones tecnológicas innovadoras que impulsan la transformación digital de empresas e instituciones. Nuestro equipo combina creatividad, estrategia y experiencia para ofrecer herramientos eficientes y adaptadas a cada necesidad.
+  <main>
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-title">Impulsamos la Transformación Digital</h1>
+        <p class="hero-intro">
+          En STROKBIG somos una compañía dedicada a desarrollar soluciones tecnológicas innovadoras que impulsan la transformación digital de empresas e instituciones. Nuestro equipo combina creatividad, estrategia y experiencia para ofrecer herramientas eficientes y adaptadas a cada necesidad.
         </p>
-        <a href=„ETH.html" clase="cta héroe-cta">
+        <a href="ETH.html" class="cta hero-cta">
           <span class="cta-icon">👉</span> Explora nuestros servicios
         </a>
       </div>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="partner-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYtlpPXXdjW4y6rT8gDCXtru-Zu15XeIzLA&s" alt="Logo Politécnico PIO">
+                        <img src="assets/marcas/Eltriunfosantateresa.jpeg" alt="Logo El Triunfo Santa Teresa">
                         <div class="partner-info">
                             <span class="partner-name">Inst. Educ. El Triunfo Santa Teresa</span>
                             <span class="partner-date">Cliente desde Agosto 2025</span>
@@ -346,5 +346,4 @@
 <script src="Script/Menu.js"></script>
 
 </body>
-
 </html>
