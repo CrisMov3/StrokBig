@@ -8,8 +8,7 @@
     --white-color: #FFFFFF;
     --border-color: #E2E8F0;
     --font-family: 'Poppins', sans-serif;
-    /* Variables de Menu.css que podrían ser necesarias */
-    --text-dark-blue: #042a63; 
+    --text-dark-blue: #042a63; /* Añadida para la navbar */
 }
 
 * {
@@ -62,10 +61,6 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-}
-
-main {
-    padding-top: 110px;
 }
 
 .navbar {
@@ -229,7 +224,6 @@ main {
 .overlay {
     display: none;
 }
-
 /* ============================================= */
 /* ===== FIN DE HEADER Y NAVBAR (NUEVO) ===== */
 /* ============================================= */
@@ -238,6 +232,10 @@ main {
 /* ============================================= */
 /* ===== SUB-NAVEGACIÓN DE SERVICIOS ===== */
 /* ============================================= */
+main {
+    padding-top: 110px;
+}
+
 .services-nav-wrapper {
     background-color: #f0f4f8;
     padding: 20px 0;
@@ -1232,12 +1230,7 @@ main {
 /* ============================================= */
 /* =============== MEDIA QUERIES =============== */
 /* ============================================= */
-
-/* Este bloque combina el CSS responsivo de la NUEVA navbar
-   y el CSS responsivo del CONTENIDO de ETH.css */
 @media (max-width: 1300px) {
-    
-    /* --- Reglas de Navbar (NUEVO) --- */
     main {
         padding-top: 0px;
     }
@@ -1316,17 +1309,22 @@ main {
         width: 100%;
     }
     
+    /* --- INICIO DE LA CORRECCIÓN --- */
     .nav-links__cta-mobile + .nav-links__cta-mobile {
-        margin-top: -15px; /* Junta el segundo botón al primero */
+        margin-top: 10px; /* Cambiado de -15px a 10px */
     }
 
     .nav-links__cta-mobile .cta {
         color: #fff !important;
         width: 100%;
-        padding: 14px 30px;
+        padding: 14px 24px; /* Padding horizontal reducido */
+        font-size: 1.1rem; /* Fuente ligeramente reducida */
+        text-align: center; /* Asegura el centrado */
         /* Hacemos que ambos tengan borde para que midan lo mismo */
         border: 2px solid var(--text-dark-blue);
     }
+    /* --- FIN DE LA CORRECCIÓN --- */
+
 
     /* Botón "Pagos en Línea" (Sólido) */
     .nav-links__cta-mobile .cta-mobile--highlight {
@@ -1366,7 +1364,7 @@ main {
         visibility: visible;
     }
     
-    /* --- Reglas de Contenido (de ETH.css) --- */
+    /* --- Reglas de ETH.css --- */
     .why-zeitplan-container {
         flex-direction: column;
         gap: 40px;

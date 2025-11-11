@@ -578,7 +578,7 @@ main {
         transform: rotate(45deg) translate(7px, 7px);
     }
 
-    .hamburger-btn.active span:nth-C-child(2) {
+    .hamburger-btn.active span:nth-child(2) {
         opacity: 0;
     }
 
@@ -627,17 +627,22 @@ main {
         width: 100%;
     }
     
+    /* --- INICIO DE LA CORRECCIÓN --- */
     .nav-links__cta-mobile + .nav-links__cta-mobile {
-        margin-top: -15px; /* Junta el segundo botón al primero */
+        margin-top: 10px; /* Cambiado de -15px a 10px */
     }
 
     .nav-links__cta-mobile .cta {
         color: #fff !important;
         width: 100%;
-        padding: 14px 30px;
+        padding: 14px 24px; /* Padding horizontal reducido */
+        font-size: 1.1rem; /* Fuente ligeramente reducida */
+        text-align: center; /* Asegura el centrado */
         /* Hacemos que ambos tengan borde para que midan lo mismo */
         border: 2px solid var(--text-dark-blue);
     }
+    /* --- FIN DE LA CORRECCIÓN --- */
+
 
     /* Botón "Pagos en Línea" (Sólido) */
     .nav-links__cta-mobile .cta-mobile--highlight {

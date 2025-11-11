@@ -203,7 +203,6 @@ header {
 /* ===== FIN DE HEADER Y NAVBAR (NUEVO) ===== */
 /* ============================================= */
 
-
 /* ============================================= */
 /* ===== ESTILOS ESPECÍFICOS DE LA PÁGINA    ===== */
 /* ============================================= */
@@ -705,17 +704,22 @@ main {
         width: 100%;
     }
     
+    /* --- INICIO DE LA CORRECCIÓN --- */
     .nav-links__cta-mobile + .nav-links__cta-mobile {
-        margin-top: -15px; /* Junta el segundo botón al primero */
+        margin-top: 10px; /* Cambiado de -15px a 10px */
     }
 
     .nav-links__cta-mobile .cta {
         color: #fff !important;
         width: 100%;
-        padding: 14px 30px;
+        padding: 14px 24px; /* Padding horizontal reducido */
+        font-size: 1.1rem; /* Fuente ligeramente reducida */
+        text-align: center; /* Asegura el centrado */
         /* Hacemos que ambos tengan borde para que midan lo mismo */
         border: 2px solid var(--text-dark-blue);
     }
+    /* --- FIN DE LA CORRECCIÓN --- */
+
 
     /* Botón "Pagos en Línea" (Sólido) */
     .nav-links__cta-mobile .cta-mobile--highlight {
@@ -760,7 +764,6 @@ main {
     }
 }
 
-
 @media (max-width: 800px) {
   .footer-top {
     flex-direction: column;
@@ -782,8 +785,6 @@ main {
 }
 
 @media (max-width: 700px) {
-  /* Estas reglas ya están cubiertas por .navbar en el bloque de 1300px
-     pero las mantenemos por si hay ajustes de logo específicos */
   .navbar {
     height: 90px;
     padding: 0 20px;
@@ -791,11 +792,6 @@ main {
 
   .navbar.scrolled {
     height: 60px;
-  }
-  
-  /* Ajuste de padding de main para la navbar móvil */
-  main {
-    padding-top: 90px;
   }
 
   .logo {
@@ -808,6 +804,10 @@ main {
 
   .logo img.logo--full {
     height: 38px;
+  }
+
+  main {
+    padding-top: 90px;
   }
 
   .policy-hero {
