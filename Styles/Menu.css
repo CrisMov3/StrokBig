@@ -617,6 +617,8 @@ main {
     font-weight: 500;
 }
 
+/*Fin de la seccion de carrucel de partners*/
+
 .testimonials-section {
     padding: 100px 0;
     background-color: var(--background-dark);
@@ -1201,4 +1203,5 @@ main {
         flex-direction: column;
         gap: 10px;
     }
+
 }
