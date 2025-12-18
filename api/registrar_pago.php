@@ -14,9 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // --- Configuración de la Base de Datos ---
 $servername = "localhost";
-$username = "root";
-$password = ""; // Revisa si esta sigue siendo tu contraseña
-$dbname = "strokbig_db";
+$username = "stro_userroot";
+$password = "StrokbigDB2025!"; // Revisa si esta sigue siendo tu contraseña
+$dbname = "stro_strokbig_db";
 
 $response = ['success' => false, 'message' => 'Error desconocido.'];
 
@@ -227,4 +227,5 @@ try {
 $conn->close();
 error_log("Respuesta final enviada: " . json_encode($response)); // LOG 13: Respuesta final
 echo json_encode($response);
+
 ?>
