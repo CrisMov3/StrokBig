@@ -8,9 +8,9 @@ header('Access-Control-Allow-Origin: *'); // Or your specific admin panel origin
 
 // --- DB Configuration ---
 $servername = "localhost";
-$username = "root";
-$password = ""; // <-- YOUR MYSQL PASSWORD HERE
-$dbname = "strokbig_db";
+$username = "stro_userroot";
+$password = "StrokbigDB2025!"; // <-- YOUR MYSQL PASSWORD HERE
+$dbname = "stro_strokbig_db";
 
 $response = ['success' => false, 'message' => 'Cliente no encontrado.'];
 $cliente_encontrado = null;
@@ -78,4 +78,5 @@ $conn->close();
 
 // Send JSON response
 echo json_encode($response);
+
 ?>
