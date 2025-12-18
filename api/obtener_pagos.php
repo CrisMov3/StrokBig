@@ -11,9 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // --- Configuración de la Base de Datos ---
 $servername = "localhost";
-$username = "root";
-$password = ""; // <-- ¡¡¡PON TU CONTRASEÑA DE MYSQL AQUÍ!!!
-$dbname = "strokbig_db";
+$username = "stro_userroot";
+$password = "StrokbigDB2025!"; // <-- ¡¡¡PON TU CONTRASEÑA DE MYSQL AQUÍ!!!
+$dbname = "stro_strokbig_db";
 
 $response = ['success' => false, 'message' => 'Error desconocido.'];
 
@@ -53,4 +53,5 @@ try {
 
 $conn->close();
 echo json_encode($response);
+
 ?>
