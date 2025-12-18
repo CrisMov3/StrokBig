@@ -5,9 +5,9 @@ header('Access-Control-Allow-Origin: *');
 
 // --- Configuración de la Base de Datos ---
 $servername = "localhost";
-$username = "root";
-$password = ""; // <-- PON TU CONTRASEÑA DE MYSQL AQUÍ
-$dbname = "strokbig_db";
+$username = "stro_userroot";
+$password = "StrokbigDB2025!"; // <-- PON TU CONTRASEÑA DE MYSQL AQUÍ
+$dbname = "stro_strokbig_db";
 
 // Respuesta por defecto
 $response = ['success' => false, 'message' => 'No se encontraron datos.'];
@@ -118,4 +118,5 @@ if ($user_data && !empty($user_data['invoices'])) {
 $conn->close();
 echo json_encode($response);
 exit;
+
 ?>
